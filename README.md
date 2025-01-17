@@ -1,6 +1,16 @@
 # sandbag
 Attempting to create a public-facing read-only NBD server that can create volumes that Linux users can mount over the Internet.
 
+========
+
+DEVELOPMENT STATUS: untested
+
+Working on a testing framework, happy to see feedback though or somebody else run with the ball.  For now please just think about the applications if we can make this work.
+
+DISCLAIMER: I DON'T KNOW WHAT I'M DOING
+
+========
+
 We use HTTP, FTP, RSYNC and the rest because we want to promote interoperabilty between all of the different OSs.  I can host my website on Linux and you can read it on Mac.  That's amazing.
 
 But what about content that is exclusively served to GNU+Linux users?  I feel that there is a lot of value to be obtained by serving certain content to Linux users over volumes hosted on NBD servers and mounted over the Internet.  A very simple example would be a rescue CD.  You can boot a kernel that's been built to establish a connection to this image created for the purpose and that is hosted somewhere on the Internet and mount it for use.
